@@ -33,6 +33,7 @@ def max_profit(prices):
         for j in range (i + 1, len(prices)):
             profit:int = prices[j] - prices[i]
             if profit > max:
+                max = profit
                 print(f'the max profit is {profit}')
     return max
 
